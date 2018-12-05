@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+}
+nav ul.main {
+    display: flex;
+    background-color: blueviolet;
+    height: 60px;
+}
+nav ul.main li{
+    margin: 20px;
+    color: #FFF;
+}
+nav ul.main li a{
+    color: #FFF;
+}
+
+.sub{
+    display: flex;
+    background-color: black;
+}
+
+.sub li{
+    margin: 20px;
+}

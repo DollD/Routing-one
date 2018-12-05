@@ -1,0 +1,30 @@
+<nav>
+    <ul class="main">
+        <li  routerLink="./">
+            Home
+        </li>
+        <li>
+            <a href="">About us</a>
+        </li>
+        <li routerLink="./careers">
+            Careeers
+        </li>
+        <li>
+            <a (click)="menu = 'products'">Products</a>
+            <ul class="sub" *ngIf="menu=='products'">
+                <li>
+                    <a routerLink="./products/elec">Elec</a>
+                </li>
+                <li>
+                    <a routerLink="./products/soft">Soft</a>
+                </li>
+                <li>
+                    <a routerLink="./products/hard">Hard</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<router-outlet></router-outlet>
